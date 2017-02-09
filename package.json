@@ -1,0 +1,15 @@
+{
+  "name": "homebridge-trackpin",
+  "version": "1.0.0",
+  "description": "Homebridge plugin to provide Trackpin garage door status",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "eslint ./lib"
+  },
+  "keywords": [
+    "homebridge",
+    "trackpin"
+  ],
+  "author": "Jim Karg",
+  "license": "MIT"
+}
