@@ -4,7 +4,18 @@
   "description": "Homebridge plugin to provide Trackpin garage door status",
   "main": "dist/index.js",
   "scripts": {
-    "test": "eslint ./lib"
+    "start": "node ./dist/index.js",
+    "develop": "nodemon lib/index.js --exec babel-node",
+    "test": "eslint ./lib",
+    "build": "babel lib -d dist",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-preset-env": "^1.1.8",
+    "eslint": "^3.14.1",
+    "nodemon": "^1.11.0"
   },
   "keywords": [
     "homebridge",
