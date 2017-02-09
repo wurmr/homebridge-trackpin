@@ -2,12 +2,12 @@
   "name": "homebridge-trackpin",
   "version": "1.0.0",
   "description": "Homebridge plugin to provide Trackpin garage door status",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "start": "node ./dist/index.js",
     "develop": "nodemon lib/index.js --exec babel-node",
     "test": "eslint ./lib",
-    "build": "babel lib -d dist",
+    "build": "babel lib -d ./dist",
     "prepublish": "npm run build"
   },
   "devDependencies": {
@@ -19,8 +19,16 @@
   },
   "keywords": [
     "homebridge",
-    "trackpin"
+    "trackpin",
+    "homebridge-plugin"
   ],
+  "engines": {
+    "node": ">=6.5",
+    "homebridge": ">=0.4.16"
+  },
   "author": "Jim Karg",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "trackpin-node": "^0.1.0"
+  }
 }
