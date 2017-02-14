@@ -29,6 +29,6 @@
   "author": "Jim Karg",
   "license": "MIT",
   "dependencies": {
-    "trackpin-node": "^0.1.0"
+    "trackpin-node": "^0.4.0"
   }
 }
