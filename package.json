@@ -37,7 +37,7 @@
   "author": "Jim Karg",
   "license": "MIT",
   "dependencies": {
-    "trackpin-node": "^0.4.2"
+    "trackpin-node": "^1.0.0"
   },
   "pre-commit": [
     "lint"
