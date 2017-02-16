@@ -9,8 +9,8 @@ Install the plugin:
 `$ npm install homebridge-trackpin -g`
 
 Example `config.json`:
-```
-      "accessories": [
+```json
+"accessories": [
     {
         "accessory": "TRACKPIN",
         "name": "Garage Door",
@@ -18,7 +18,7 @@ Example `config.json`:
         "password": "secret",
         "interval": 10000
     }
-  ]
+]
 ```
 
 `interval` is an optional parameter.  By default the plugin will poll the garage door every 5 seconds, if you want it different this setting is in milliseconds.
