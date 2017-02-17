@@ -16,11 +16,13 @@ Example `config.json`:
         "name": "Garage Door",
         "email": "email@abc.com",
         "password": "secret",
-        "interval": 10000
+        "interval": 10000,
+        "pins": ["Family", "Cleaners"]
     }
 ]
 ```
 
+`pins` is an optional array of a list of pins you would like to expose to homekit.
 `interval` is an optional parameter.  By default the plugin will poll the garage door every 5 seconds, if you want it different this setting is in milliseconds.
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
